@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Milk825/reflex/releases"><img src="https://img.shields.io/github/v/release/Milk825/reflex?color=e94560&label=release" alt="Release"></a>
+  <a href="https://github.com/Milk825/reflex/releases"><img src="https://img.shields.io/github/v/release/Milk825/reflex?color=e94560" alt="Release"></a>
   <a href="https://openclaw.ai"><img src="https://img.shields.io/badge/for-OpenClaw-0f3460" alt="OpenClaw"></a>
 </p>
 
