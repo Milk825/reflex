@@ -1,8 +1,8 @@
 {
-  "name": "@local/autonomy",
+  "name": "@local/reflex",
   "version": "0.1.0",
   "private": true,
-  "description": "OpenClaw autonomy plugin scaffold with Python UDS bridge",
+  "description": "OpenClaw reflex plugin scaffold with Python UDS bridge",
   "type": "module",
   "main": "dist/index.js",
   "files": [

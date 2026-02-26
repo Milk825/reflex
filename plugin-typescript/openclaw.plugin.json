@@ -1,7 +1,7 @@
 {
-  "id": "autonomy",
+  "id": "reflex",
   "name": "Autonomy Bridge",
-  "description": "OpenClaw autonomy integration via local Python bridge over UDS",
+  "description": "OpenClaw reflex integration via local Python bridge over UDS",
   "version": "0.1.0",
   "configSchema": {
     "type": "object",
@@ -22,7 +22,7 @@
         "properties": {
           "socketPath": {
             "type": "string",
-            "default": "~/.openclaw/state/autonomy/autonomy.sock"
+            "default": "~/.openclaw/state/reflex/reflex.sock"
           },
           "requestTimeoutMs": {
             "type": "number",
