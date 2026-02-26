@@ -1,20 +1,38 @@
-# Reflex
+<p align="center">
+  <img src="assets/logo.svg" alt="Reflex Logo" width="120"/>
+</p>
 
-**Self-correcting intelligence for AI agents.**
+<h1 align="center">Reflex</h1>
 
-Reflex is a real-time autonomy layer for OpenClaw that intercepts tool calls, detects failure patterns, and automatically switches approaches—giving any language model the resilience and adaptability of premium systems, locally and at zero API cost.
+<p align="center">
+  <strong>Self-correcting intelligence for AI agents</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Milk825/reflex/releases"><img src="https://img.shields.io/github/v/release/Milk825/reflex?color=e94560&label=release" alt="Release"></a>
+  <a href="https://github.com/Milk825/reflex/actions"><img src="https://img.shields.io/github/actions/workflow/status/Milk825/reflex/test.yml?color=0f3460&label=tests" alt="Tests"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-e94560" alt="License"></a>
+  <a href="https://openclaw.ai"><img src="https://img.shields.io/badge/for-OpenClaw-0f3460" alt="OpenClaw"></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.10+-0f3460?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/typescript-5.0+-e94560?logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/latency-<10ms-00d26a" alt="Latency">
+  <img src="https://img.shields.io/badge/cost-$0-00d26a" alt="Zero Cost">
+</p>
 
 ---
 
 ## Why Reflex Exists
 
-Most AI agents execute tools blindly. When they fail, they loop. When they loop, they hallucinate. When they hallucinate, you pay for wasted tokens and broken workflows.
+Accessible language models—local runners, budget APIs, self-hosted solutions—excel at reasoning but struggle with **resilience**. When they fail, they loop. When they loop, they hallucinate. When they hallucinate, you pay for wasted tokens and broken workflows.
 
-**Reflex changes the equation.**
+**Reflex closes the gap.**
 
-Instead of asking "how do we get better models?" we asked "how do we make the models we have *smarter about when they're failing?*"
+Instead of asking "how do we afford better models?" we asked "how do we make the models we have *smarter about knowing when they're stuck?*"
 
-The answer: intercept, evaluate, adapt—*before* execution, not after.
+The answer: intercept, evaluate, adapt—*before* execution, not after. Reflex gives any language model the self-correcting reflex of premium systems, locally and at zero API cost.
 
 ---
 
@@ -27,11 +45,13 @@ Reflex sits between your agent's reasoning and the outside world. Every tool cal
 | Try → Fail → Try same → Fail → Hallucinate → Loop forever | Try → Fail → Detect pattern → Switch approach → Try different → Succeed |
 | Reacts to failure after it happens | Prevents failure before it occurs |
 | Manual intervention required | Self-correcting autonomy |
-| $200/month Opus-level reliability | $0.10 model with Opus-level resilience |
+| Accessible models with brittle behavior | Accessible models with premium resilience |
 
 ---
 
 ## Core Capabilities
+
+<img align="right" src="assets/logo.svg" width="80">
 
 **🔍 Pattern Detection**
 - Identifies looping, over-eagerness, and confidence collapse in real-time
@@ -88,7 +108,7 @@ The best AI capabilities shouldn't require the most expensive models.
 npm install -g openclaw-plugin-reflex
 
 # Enable in your OpenClaw config
-openclaw config set agents.defaults.memorySearch.enabled true
+openclaw config set agents.defaults.reflex.enabled true
 openclaw config set agents.defaults.reflex.mode shadow
 
 # Start in shadow mode—watch, learn, zero risk
@@ -136,10 +156,12 @@ Reflex is designed to fail safely:
 
 ## Performance
 
-- **Latency:** <10ms per tool call (p95: ~2.6ms)
-- **Memory:** ~50-100MB bounded cache
-- **CPU:** Local Python, negligible overhead
-- **Tokens:** Zero additional API cost
+| Metric | Value |
+|--------|-------|
+| **Latency** | <10ms per tool call (p95: ~2.6ms) |
+| **Memory** | ~50-100MB bounded cache |
+| **CPU** | Local Python, negligible overhead |
+| **Tokens** | Zero additional API cost |
 
 ---
 
@@ -158,4 +180,6 @@ MIT License—use it, fork it, improve it.
 
 ---
 
-**Built for OpenClaw. Designed for builders.**
+<p align="center">
+  <strong>Built for OpenClaw. Designed for builders.</strong>
+</p>
