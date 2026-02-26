@@ -10,7 +10,6 @@
 
 <p align="center">
   <a href="https://github.com/Milk825/reflex/releases"><img src="https://img.shields.io/github/v/release/Milk825/reflex?color=e94560&label=release" alt="Release"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-e94560" alt="License"></a>
   <a href="https://openclaw.ai"><img src="https://img.shields.io/badge/for-OpenClaw-0f3460" alt="OpenClaw"></a>
 </p>
 
@@ -170,12 +169,6 @@ Reflex is designed to fail safely:
 - [Configuration Reference](./docs/configuration.md)
 - [Architecture Deep-Dive](./docs/architecture.md)
 - [Contributing](./CONTRIBUTING.md)
-
----
-
-## License
-
-MIT License—use it, fork it, improve it.
 
 ---
 
