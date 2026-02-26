@@ -29,7 +29,7 @@ from pathlib import Path
 from typing import Any, Awaitable, Callable, Deque, Dict, Optional, Tuple
 from urllib.parse import parse_qs, urlsplit
 
-from analysis.autonomy.integration import AutonomyCoordinator
+from .integration import AutonomyCoordinator
 
 JSONDict = Dict[str, Any]
 Handler = Callable[[str, JSONDict], Awaitable[Tuple[int, JSONDict]]]

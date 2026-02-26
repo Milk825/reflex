@@ -1,6 +1,6 @@
 import unittest
 
-from analysis.autonomy.communication import CommunicationPolicy
+from analysis.autonomy.core.communication import CommunicationPolicy
 
 
 class CommunicationPolicyTests(unittest.TestCase):

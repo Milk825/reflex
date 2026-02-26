@@ -1,21 +1,27 @@
-"""Autonomy integration package."""
+# Reflex - Self-correcting intelligence layer
+# Root package exports
 
-from .auto_reflection import AutoReflectionEngine, ReflectionRecord
-from .communication import CommunicationPolicy
-from .integration import AutonomyCoordinator, ConfidenceScorer, LessonPipeline
-from .meta_cognition import MetaAssessment, MetaCognitionMonitor
-from .rollout import RolloutTracker
-from .self_evaluation import SelfEvaluator
+from .core.bridge import BridgeServer
+from .core.integration import AutonomyCoordinator, ActionDirective
+from .core.meta_cognition import MetaCognitionMonitor, LoopingState
+from .core.preflight import PreflightChecker
+from .core.rollout import RolloutController, RolloutMode
+from .core.self_evaluation import SelfEvaluation
+from .core.auto_reflection import AutoReflection
+from .core.communication import CommunicationPolicy
+
+__version__ = "0.1.0"
 
 __all__ = [
+    "BridgeServer",
     "AutonomyCoordinator",
-    "AutoReflectionEngine",
-    "CommunicationPolicy",
-    "ConfidenceScorer",
-    "LessonPipeline",
-    "MetaAssessment",
+    "ActionDirective",
     "MetaCognitionMonitor",
-    "ReflectionRecord",
-    "RolloutTracker",
-    "SelfEvaluator",
+    "LoopingState",
+    "PreflightChecker",
+    "RolloutController",
+    "RolloutMode",
+    "SelfEvaluation",
+    "AutoReflection",
+    "CommunicationPolicy",
 ]

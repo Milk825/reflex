@@ -6,7 +6,7 @@ import time
 import unittest
 from pathlib import Path
 
-from analysis.autonomy.bridge import BridgeServer
+from analysis.autonomy.core.bridge import BridgeServer
 
 
 class AutonomyCliTests(unittest.IsolatedAsyncioTestCase):

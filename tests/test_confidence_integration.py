@@ -2,8 +2,8 @@ import math
 import time
 import unittest
 
-from analysis.autonomy.integration import AutonomyCoordinator, ConfidenceScorer
-from analysis.autonomy.preflight import PreflightChecker
+from analysis.autonomy.core.integration import AutonomyCoordinator, ConfidenceScorer
+from analysis.autonomy.core.preflight import PreflightChecker
 
 
 class ConfidenceScorerTests(unittest.TestCase):

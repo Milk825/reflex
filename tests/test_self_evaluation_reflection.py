@@ -2,9 +2,9 @@ import asyncio
 import time
 import unittest
 
-from analysis.autonomy.auto_reflection import AutoReflectionEngine
-from analysis.autonomy.integration import AutonomyCoordinator
-from analysis.autonomy.self_evaluation import SelfEvaluator
+from analysis.autonomy.core.auto_reflection import AutoReflectionEngine
+from analysis.autonomy.core.integration import AutonomyCoordinator
+from analysis.autonomy.core.self_evaluation import SelfEvaluator
 
 
 class SelfEvaluatorTests(unittest.TestCase):

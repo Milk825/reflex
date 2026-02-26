@@ -2,7 +2,7 @@ import statistics
 import time
 import unittest
 
-from analysis.autonomy.integration import AutonomyCoordinator
+from analysis.autonomy.core.integration import AutonomyCoordinator
 
 
 class PerformanceRegressionTests(unittest.IsolatedAsyncioTestCase):

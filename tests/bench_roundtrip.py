@@ -5,7 +5,7 @@ import tempfile
 import time
 from pathlib import Path
 
-from analysis.autonomy.bridge import BridgeServer
+from analysis.autonomy.core.bridge import BridgeServer
 
 
 async def request_once(socket_path: str) -> float:

@@ -1,6 +1,6 @@
 import unittest
 
-from analysis.autonomy.integration import AutonomyCoordinator
+from analysis.autonomy.core.integration import AutonomyCoordinator
 
 
 class InterventionIntegrationTests(unittest.IsolatedAsyncioTestCase):

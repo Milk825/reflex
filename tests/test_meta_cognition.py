@@ -1,8 +1,8 @@
 import time
 import unittest
 
-from analysis.autonomy.integration import ConfidenceScorer
-from analysis.autonomy.meta_cognition import MetaCognitionMonitor
+from analysis.autonomy.core.integration import ConfidenceScorer
+from analysis.autonomy.core.meta_cognition import MetaCognitionMonitor
 
 
 class MetaCognitionHeuristicTests(unittest.TestCase):

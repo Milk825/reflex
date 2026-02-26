@@ -1,6 +1,6 @@
 import unittest
 
-from analysis.autonomy.rollout import RolloutTracker
+from analysis.autonomy.core.rollout import RolloutTracker
 
 
 class RolloutPolicyTests(unittest.TestCase):

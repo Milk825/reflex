@@ -5,7 +5,7 @@ import time
 import unittest
 from pathlib import Path
 
-from analysis.autonomy.bridge import BridgeServer, _safe_unlink_socket
+from analysis.autonomy.core.bridge import BridgeServer, _safe_unlink_socket
 
 
 class BridgeServerTests(unittest.IsolatedAsyncioTestCase):
