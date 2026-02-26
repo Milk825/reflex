@@ -5,7 +5,7 @@
 <h1 align="center">Reflex</h1>
 
 <p align="center">
-  <strong>Self-correcting intelligence for AI agents</strong>
+  <strong>Self-correcting intelligence for AI agentsusing less capable models</strong>
 </p>
 
 <p align="center">
