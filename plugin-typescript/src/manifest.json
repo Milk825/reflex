@@ -1,0 +1,66 @@
+{
+  "id": "autonomy",
+  "name": "Autonomy Bridge",
+  "description": "OpenClaw autonomy integration via local Python bridge over UDS",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "mode": {
+        "type": "string",
+        "enum": ["shadow", "suggest", "active"],
+        "default": "shadow"
+      },
+      "failOpen": {
+        "type": "boolean",
+        "default": true
+      },
+      "bridge": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "socketPath": {
+            "type": "string",
+            "default": "~/.openclaw/state/autonomy/autonomy.sock"
+          },
+          "requestTimeoutMs": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 80
+          },
+          "preflightTimeoutMs": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 6
+          },
+          "asyncTimeoutMs": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 20
+          }
+        },
+        "required": ["socketPath"]
+      },
+      "circuitBreaker": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "failureThreshold": {
+            "type": "number",
+            "minimum": 1,
+            "default": 3
+          },
+          "cooldownMs": {
+            "type": "number",
+            "minimum": 100,
+            "default": 5000
+          }
+        }
+      }
+    }
+  }
+}

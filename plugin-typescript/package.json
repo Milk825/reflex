@@ -1,0 +1,34 @@
+{
+  "name": "@local/autonomy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenClaw autonomy plugin scaffold with Python UDS bridge",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "openclaw.plugin.json"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "manifest:copy": "node ./scripts/sync-manifest.mjs",
+    "build": "npm run clean && tsc -p tsconfig.json && npm run manifest:copy",
+    "dev": "npm run manifest:copy && tsc -w --preserveWatchOutput",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.1.26"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
